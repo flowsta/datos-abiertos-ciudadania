@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<title>Datos Abiertos para la Ciudadanía</title>
+<meta name="author" content="(Adolfo Antón Bravo, OEG-UPM)"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/css/reveal.css"/>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/css/theme/sky.css" id="theme"/>
+
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'https://cdn.jsdelivr.net/npm/reveal.js/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide"><h1 class="title">Datos Abiertos para la Ciudadanía</h1>
+</section>
+<section>
+<section id="slide-org4e665b9">
+<h2 id="org4e665b9">OEG-UPM</h2>
+<ul>
+<li>Doctor Adolfo Antón Bravo</li>
+<li>Investigador en Ontology Engineering Group-Universidad Politécnica
+de Madrid</li>
+
+</ul>
+
+<div class="figure">
+<p><img src="./img/Logo_OEG.gif" alt="Logo_OEG.gif" />
+</p>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-org65515f0">
+<h2 id="org65515f0">Ciudades Abiertas</h2>
+
+<div class="figure">
+<p><img src="./img/ciudades-abiertas.png" alt="ciudades-abiertas.png" />
+</p>
+</div>
+
+</section>
+<section id="slide-org6ff50a7">
+<h3 id="org6ff50a7">Plataforma de gobierno abierto, colaborativa e interoperable</h3>
+<ul>
+<li>Beneficiarios de la "II Convocatoria de Ciudades Inteligentes" del Ministerio de Economía y Empresa.</li>
+<li>Alineado con el Plan Nacional de Ciudades Inteligentes</li>
+
+</ul>
+
+</section>
+<section id="slide-orgdb856a4">
+<h3 id="orgdb856a4">Objetivos</h3>
+<ul>
+<li>Su principal objetivo el desarrollo pleno de las políticas de
+Gobierno Abierto en las ciudades</li>
+<li>Impulso decidido de la publicación de datos abiertos, el desarrollo
+de procesos participativos y la publicación de servicios que
+favorezcan la transparencia por defecto.</li>
+<li>URL: <a href="https://ciudadesabiertas.es">https://ciudadesabiertas.es</a></li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org3493d7a">
+<h2 id="org3493d7a">Datos abiertos</h2>
+<ul>
+<li>Gestión de datos únicos compartidos</li>
+<li>Abiertos por defecto</li>
+<li>Georreferenciados</li>
+<li>Semánticamente anotados por parte de la ciudad.</li>
+
+</ul>
+
+</section>
+<section id="slide-orgb5afd6b">
+<h3 id="orgb5afd6b">Cómo</h3>
+<ul>
+<li>Una API REST que permite lectura y escritura sobre datos</li>
+<li>Punto de acceso SPARQL para realizar consultas</li>
+<li>Servicio de indexación y búsqueda</li>
+
+</ul>
+
+</section>
+<section id="slide-org825b59e">
+<h3 id="org825b59e">Permite</h3>
+<ul>
+<li>Creación de aplicaciones</li>
+<li>Filtrado de datos</li>
+<li>Interacción con los datos</li>
+
+</ul>
+
+</section>
+<section id="slide-orgf6bf79d">
+<h3 id="orgf6bf79d">Comprende</h3>
+<ul>
+<li>Proporcionar medios técnicos y conceptuales</li>
+<li>Gestión y publicación de datos abiertos.</li>
+<li>Para todxs: ciudadanía, empresas y administraciones públicas.</li>
+
+</ul>
+
+</section>
+<section id="slide-org9cc36f9">
+<h3 id="org9cc36f9">Actuaciones</h3>
+<ul>
+<li>API REST de datos (reutilizable)</li>
+<li>Portal de datos abiertos</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org252de90">
+<h2 id="org252de90">API REST</h2>
+<ul>
+<li>Sistema de gestión y publicación de datos abiertos.</li>
+<li>A partir del desarrollo software que se encuentra desplegado y en
+producción en Zaragoza:
+<ul>
+<li>API REST</li>
+<li>Punto de acceso SPARQL</li>
+<li>Servicio de indexación y búsqueda</li>
+
+</ul></li>
+<li>Reutilización en los otros ayuntamientos, otras ciudades u otros
+organismo con su publicación en Github.</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org0cd6bdc">
+<h2 id="org0cd6bdc">Portal de datos abiertos</h2>
+<ul>
+<li>Puesta en marcha de portal de datos abiertos en Compostela</li>
+<li>Publicación de datos municipales</li>
+<li>Acceso y reutilización de datos por terceros</li>
+<li>Estructura como modelo de referencia. Publicación en <a href="https://github.com/concello-santiago-de-compostela/portal-datos-abertos">Github</a></li>
+
+</ul>
+
+</section>
+<section id="slide-org07b65de">
+<h3 id="org07b65de">Estructura</h3>
+<ul>
+<li>Herramienta de gestión de conjuntos de datos basada en CKAN</li>
+<li>Gestor de contenidos Drupal</li>
+<li>Aprovechamiento de datos de bases de datos relacionales</li>
+<li>Reutilización de antoaciones para los conjuntos de datos.</li>
+<li>Indexación de datos en RDF</li>
+<li>Punto de acceso SPARQL</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org85b0c5a">
+<h2 id="org85b0c5a">Diagrama</h2>
+
+<div class="figure">
+<p><img src="./img/diagrama.png" alt="diagrama.png" />
+</p>
+</div>
+
+</section>
+<section id="slide-org0885ff0">
+<h3 id="org0885ff0">Diagrama: leyenda</h3>
+<ol>
+<li>Proxy inverso <b>Varnish</b> gestiona enrutamiento a gestores</li>
+<li>Portal de contenidos <b>Drupal</b> gestiona el contenido editorial</li>
+<li>Catálogo de datos <b>CKAN</b> contiene el repositorio único de metadatos</li>
+<li>Motor de indexación <b>Apache Solr</b> búsqueda para el portal de contenidos y el catálogo de datos</li>
+<li>Capa de persistencia implementada en <b>MySQL</b> y <b>PostgreSQL</b>,
+repositorio de datos para el portal de contenidos y el catálogo de
+datos</li>
+
+</ol>
+</section>
+</section>
+<section>
+<section id="slide-org9be2b7e">
+<h2 id="org9be2b7e">Gracias</h2>
+<ul>
+<li>URL: <a href="https://oeg-upm.net/">https://oeg-upm.net/</a></li>
+<li>LOV: <a href="https://lov.linkeddata.es/dataset/lov/">https://lov.linkeddata.es/dataset/lov/</a></li>
+<li>E-mail: adolfo.anton.bravo@upm.net/</li>
+<li>Twitter: <a href="https://twitter.com/adoflow">@adolflow@twitter.com</a></li>
+<li>Mastodon: <a href="https://vis.social/adolflow">@adolflow@vis.social</a></li>
+<li>Github: <a href="https://github.com/flowsta">@flowsta@github.com</a></li>
+
+</ul>
+</section>
+</section>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js/js/reveal.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+multiplex: {
+    secret: '', // null if client
+    id: '', // id, obtained from socket.io server
+    url: '' // Location of socket.io server
+},
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+});
+</script>
+</body>
+</html>
