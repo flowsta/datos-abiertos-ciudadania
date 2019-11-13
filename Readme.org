@@ -1,0 +1,116 @@
+#+TITLE: Datos Abiertos para la Ciudadanía
+#+AUTHOR: Adolfo Antón Bravo, OEG-UPM
+#+DATE: <2019-11-12 Tue>
+#+OPTIONS: author:nil
+#+EXPORT_FILE_NAME: index.html
+#+REVEAL_MARGIN: 0.1
+#+REVEAL_MIN_SCALE: 0.5
+#+REVEAL_MAX_SCALE: 2.5
+#+REVEAL_TRANS: linear
+#+REVEAL_THEME: sky
+#+REVEAL_OPTIONS: reveal_background: ./img/inicio-datablog
+#+REVEAL_ROOT: //cdn.jsdelivr.net/reveal.js/5.4.0/
+#+REVEAL_ROOT: https://cdn.jsdelivr.net/npm/reveal.js
+#+LANGUAGE:  es
+#+OPTIONS:   H:3 num:nil \n:nil @:t ::nil |:nil ^:nil -:nil f:nil *:t <:nil
+#+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+OPTIONS: author:nil email:nil creator:nil timestamp:nil date:nil toc:nil
+#+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0  path:https://orgmode.org/org-info.js
+* OEG-UPM
+- Doctor Adolfo Antón Bravo
+- Investigador en Ontology Engineering Group-Universidad Politécnica
+  de Madrid
+[[./img/Logo_OEG.gif]]
+* Ciudades Abiertas
+[[./img/ciudades-abiertas.png]]
+
+** Plataforma de gobierno abierto, colaborativa e interoperable
+
+- Beneficiarios de la "II Convocatoria de Ciudades Inteligentes" del Ministerio de Economía y Empresa.
+- Alineado con el Plan Nacional de Ciudades Inteligentes
+
+** Objetivos
+- Su principal objetivo el desarrollo pleno de las políticas de
+  Gobierno Abierto en las ciudades
+- Impulso decidido de la publicación de datos abiertos, el desarrollo
+  de procesos participativos y la publicación de servicios que
+  favorezcan la transparencia por defecto.
+- URL: https://ciudadesabiertas.es
+
+* Datos abiertos
+
+- Gestión de datos únicos compartidos
+- Abiertos por defecto
+- Georreferenciados
+- Semánticamente anotados por parte de la ciudad.
+
+** Cómo
+
+- Una API REST que permite lectura y escritura sobre datos
+- Punto de acceso SPARQL para realizar consultas
+- Servicio de indexación y búsqueda
+
+** Permite
+
+- Creación de aplicaciones
+- Filtrado de datos
+- Interacción con los datos
+
+** Comprende
+
+- Proporcionar medios técnicos y conceptuales
+- Gestión y publicación de datos abiertos.
+- Para todxs: ciudadanía, empresas y administraciones públicas.
+
+** Actuaciones
+- API REST de datos (reutilizable)
+- Portal de datos abiertos
+
+* API REST
+- Sistema de gestión y publicación de datos abiertos.
+- A partir del desarrollo software que se encuentra desplegado y en
+  producción en Zaragoza:
+  - API REST
+  - Punto de acceso SPARQL
+  - Servicio de indexación y búsqueda
+- Reutilización en los otros ayuntamientos, otras ciudades u otros
+  organismo con su publicación en Github.
+
+* Portal de datos abiertos
+
+- Puesta en marcha de portal de datos abiertos en Compostela
+- Publicación de datos municipales
+- Acceso y reutilización de datos por terceros
+- Estructura como modelo de referencia. Publicación en [[https://github.com/concello-santiago-de-compostela/portal-datos-abertos][Github]]
+
+** Estructura
+- Herramienta de gestión de conjuntos de datos basada en CKAN
+- Gestor de contenidos Drupal
+- Aprovechamiento de datos de bases de datos relacionales
+- Reutilización de antoaciones para los conjuntos de datos.
+- Indexación de datos en RDF
+- Punto de acceso SPARQL
+
+* Diagrama
+
+[[./img/diagrama.png]]
+
+** Diagrama: leyenda
+
+1. Proxy inverso *Varnish* gestiona enrutamiento a gestores
+2. Portal de contenidos *Drupal*
+3. Catálogo de datos *CKAN* contiene el repositorio único de metadatos
+4. Motor de indexación *Apache Solr* búsqueda para el portal y el catálogo de datos
+5. Capa de persistencia en *MySQL* y *PostgreSQL*,
+   repositorio de datos para el portal de contenidos y el catálogo de
+   datos
+* Gracias
+- URL: https://oeg-upm.net/
+- LOV: https://lov.linkeddata.es/dataset/lov/
+- E-mail: adolfo.anton.bravo@upm.net/
+- Twitter: [[https://twitter.com/adoflow][@adolflow@twitter.com]]
+- Mastodon: [[https://vis.social/adolflow][@adolflow@vis.social]]
+- Github: [[https://github.com/flowsta][@flowsta@github.com]]
+
+
+
